@@ -172,7 +172,7 @@ export default {
             }
         },
         isOutsideClicked(event) {
-            return this.container && !this.container.contains(event.target);
+            return this.container && !(this.container.contains(event.target) || DomHandler.isAttributeEquals(event.target, 'data-pc-section', 'icon') || DomHandler.isAttributeEquals(event.target.closest('.p-icon'), 'data-pc-section', 'icon'));
         }
     },
     computed: {

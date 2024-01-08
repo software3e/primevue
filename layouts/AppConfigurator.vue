@@ -36,6 +36,16 @@
                     <button
                         :class="[
                             'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
+                            { 'border-primary': isThemeActive('aura', 'black'), 'hover:border-500 surface-border': !isThemeActive('aura', 'black') }
+                        ]"
+                        style="border-radius: 30px"
+                        @click="changeTheme('aura', 'black')"
+                    >
+                        <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #0f172a 0%, rgba(0, 0, 0, 0.5) 100%)"></span>
+                    </button>
+                    <button
+                        :class="[
+                            'bg-transparent border-1 cursor-pointer p-2 w-3 flex align-items-center justify-content-center transition-all transition-duration-200',
                             { 'border-primary': isThemeActive('aura', 'green'), 'hover:border-500 surface-border': !isThemeActive('aura', 'green') }
                         ]"
                         style="border-radius: 30px"
@@ -116,6 +126,11 @@
                         <span class="block h-1rem w-full" style="border-radius: 30px; background: linear-gradient(180deg, #ec4899 0%, rgba(236, 72, 153, 0.5) 100%)"></span>
                     </button>
                 </div>
+
+                <section class="pt-4 flex align-items-center justify-content-between">
+                    <span class="text-sm">Focus Ring Color</span>
+                    <SelectButton v-model="focusRingColor" :options="focusRingColors" @change="onFocusRingColorChange" optionLabel="label" optionValue="value" :allowEmpty="false" />
+                </section>
             </section>
 
             <section class="py-4 border-bottom-1 surface-border">
@@ -387,6 +402,11 @@ export default {
                 { label: 'Outlined', value: 'outlined' },
                 { label: 'Filled', value: 'filled' }
             ],
+            focusRingColor: 'current',
+            focusRingColors: [
+                { label: 'Current', value: 'current' },
+                { label: 'Primary', value: 'primary' }
+            ],
             compactMaterial: false,
             lightOnlyThemes: ['fluent-light', 'mira', 'nano']
         };
@@ -482,6 +502,16 @@ export default {
             }
 
             return this.$appState.theme === themeName;
+        },
+        onFocusRingColorChange(event) {
+            let root = document.documentElement;
+
+            if (event.value === 'current') {
+                root.style.setProperty('--p-focus-ring-color', 'var(--surface-400)');
+            }
+            else if (event.value === 'primary') {
+                root.style.setProperty('--p-focus-ring-color', 'var(--primary-color)');
+            }
         }
     },
     computed: {

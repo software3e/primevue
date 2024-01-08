@@ -12,7 +12,7 @@ export default {
         $route: {
             handler(to) {
                 if (to.name === 'index') {
-                    this.themeChangeListener({ theme: this.$appState.darkTheme ? 'lara-dark-green' : 'lara-light-green', dark: this.$appState.darkTheme });
+                    this.themeChangeListener({ theme: this.$appState.darkTheme ? 'aura-dark-green' : 'aura-light-green', dark: this.$appState.darkTheme });
                 }
             }
         }
@@ -23,7 +23,7 @@ export default {
                 {
                     id: 'theme-link',
                     rel: 'stylesheet',
-                    href: '/themes/lara-light-green/theme.css'
+                    href: '/themes/aura-light-green/theme.css'
                 },
                 {
                     id: 'home-table-link',
@@ -38,7 +38,7 @@ export default {
         const prefersDarkColorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         if ((preferredColorScheme === null && prefersDarkColorScheme) || preferredColorScheme === 'dark') {
-            this.applyTheme({ theme: 'lara-dark-green', dark: true });
+            this.applyTheme({ theme: 'aura-dark-green', dark: true });
         }
 
         EventBus.on('theme-change', this.themeChangeListener);

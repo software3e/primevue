@@ -357,7 +357,7 @@
   }
   .p-autocomplete:not(.p-disabled).p-focus .p-autocomplete-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -441,7 +441,7 @@
   }
   .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -681,7 +681,7 @@
   }
   .p-cascadeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -810,7 +810,7 @@
   }
   .p-checkbox:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -836,7 +836,7 @@
   }
   .p-chips:not(.p-disabled).p-focus .p-chips-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -903,7 +903,7 @@
   }
   .p-dropdown:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1160,7 +1160,7 @@
   }
   .p-inputtext:enabled:focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1311,7 +1311,7 @@
   }
   .p-listbox.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1331,7 +1331,7 @@
   }
   .p-multiselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1544,7 +1544,7 @@
   }
   .p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:focus-visible) .p-radiobutton-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1585,7 +1585,7 @@
   }
   .p-rating .p-rating-item.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1693,7 +1693,7 @@
   }
   .p-treeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }
@@ -1807,7 +1807,7 @@
   }
   .p-togglebutton.p-button:not(.p-disabled):has(.p-togglebutton-input:focus-visible) {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 1px #93cbf9;
     border-color: #64B5F6;
   }

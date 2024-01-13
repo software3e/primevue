@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-/* Error: Undefined variable.
- *    ,
- * 21 |     outline-offset: $inputFocusOutlineOffset;
- *    |                     ^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_mixins.scss 21:21                         focused-input()
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/components/input/_autocomplete.scss 22:13  @import
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_components.scss 10:13                     @import
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/themes/mira/theme.scss 3:9                            root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 21 \2502      outline-offset: $inputFocusOutlineOffset;\a    \2502                      ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_mixins.scss 21:21                         focused-input()\a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/components/input/_autocomplete.scss 22:13  @import\a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_components.scss 10:13                     @import\a   ../../../Development/projects/sass-theme/primevue-sass-theme/themes/mira/theme.scss 3:9                            root stylesheet";
-=======
 :root {
   font-family: "Inter", sans-serif;
   --font-family:"Inter", sans-serif;
@@ -406,7 +385,7 @@ body::before {
   }
   .p-autocomplete:not(.p-disabled).p-focus .p-autocomplete-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -490,7 +469,7 @@ body::before {
   }
   .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -730,7 +709,7 @@ body::before {
   }
   .p-cascadeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -859,7 +838,7 @@ body::before {
   }
   .p-checkbox:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -885,7 +864,7 @@ body::before {
   }
   .p-chips:not(.p-disabled).p-focus .p-chips-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -952,7 +931,7 @@ body::before {
   }
   .p-dropdown:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1209,7 +1188,7 @@ body::before {
   }
   .p-inputtext:enabled:focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1360,7 +1339,7 @@ body::before {
   }
   .p-listbox.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1380,7 +1359,7 @@ body::before {
   }
   .p-multiselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1593,7 +1572,7 @@ body::before {
   }
   .p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:focus-visible) .p-radiobutton-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1634,7 +1613,7 @@ body::before {
   }
   .p-rating .p-rating-item.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1742,7 +1721,7 @@ body::before {
   }
   .p-treeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -1856,7 +1835,7 @@ body::before {
   }
   .p-togglebutton.p-button:not(.p-disabled):has(.p-togglebutton-input:focus-visible) {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #C0D0E0;
     border-color: #81A1C1;
   }
@@ -6141,5 +6120,4 @@ body::before {
 .p-togglebutton.p-button {
     transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
   }
->>>>>>> master
 }

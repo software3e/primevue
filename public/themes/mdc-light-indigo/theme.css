@@ -1,25 +1,52 @@
-/* Error: Undefined variable.
- *    ,
- * 21 |     outline-offset: $inputFocusOutlineOffset;
- *    |                     ^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_mixins.scss 21:21                                 focused-input()
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/components/input/_autocomplete.scss 22:13          @import
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_components.scss 10:13                             @import
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/themes/material/material-light/compact/indigo/theme.scss 3:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 21 \2502      outline-offset: $inputFocusOutlineOffset;\a    \2502                      ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_mixins.scss 21:21                                 focused-input()\a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/components/input/_autocomplete.scss 22:13          @import\a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_components.scss 10:13                             @import\a   ../../../Development/projects/sass-theme/primevue-sass-theme/themes/material/material-light/compact/indigo/theme.scss 3:9  root stylesheet";
+:root {
+  font-family: Roboto, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  --font-family:Roboto,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+  --surface-a:#ffffff;
+  --surface-b:#fafafa;
+  --surface-c:rgba(0,0,0,.04);
+  --surface-d:rgba(0,0,0,.12);
+  --surface-e:#ffffff;
+  --surface-f:#ffffff;
+  --text-color:rgba(0, 0, 0, 0.87);
+  --text-color-secondary:rgba(0, 0, 0, 0.6);
+  --primary-color:#3F51B5;
+  --primary-color-text:#ffffff;
+  --surface-0: #ffffff;
+  --surface-50: #FAFAFA;
+  --surface-100: #F5F5F5;
+  --surface-200: #EEEEEE;
+  --surface-300: #E0E0E0;
+  --surface-400: #BDBDBD;
+  --surface-500: #9E9E9E;
+  --surface-600: #757575;
+  --surface-700: #616161;
+  --surface-800: #424242;
+  --surface-900: #212121;
+  --gray-50: #FAFAFA;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-300: #E0E0E0;
+  --gray-400: #BDBDBD;
+  --gray-500: #9E9E9E;
+  --gray-600: #757575;
+  --gray-700: #616161;
+  --gray-800: #424242;
+  --gray-900: #212121;
+  --content-padding:1rem;
+  --inline-spacing:0.5rem;
+  --border-radius:4px;
+  --surface-ground:#fafafa;
+  --surface-section:#ffffff;
+  --surface-card:#ffffff;
+  --surface-overlay:#ffffff;
+  --surface-border:rgba(0,0,0,.12);
+  --surface-hover:rgba(0,0,0,.04);
+  --focus-ring: none;
+  --maskbg: rgba(0, 0, 0, 0.32);
+  --highlight-bg: rgba(63, 81, 181, 0.12);
+  --highlight-text-color: #3F51B5;
+  color-scheme: light;
 }
-<<<<<<< HEAD
-=======
 
 /* roboto-regular - latin-ext_latin */
 @font-face {
@@ -354,7 +381,7 @@ body::before {
   }
   .p-autocomplete:not(.p-disabled).p-focus .p-autocomplete-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -438,7 +465,7 @@ body::before {
   }
   .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -678,7 +705,7 @@ body::before {
   }
   .p-cascadeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -807,7 +834,7 @@ body::before {
   }
   .p-checkbox:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -833,7 +860,7 @@ body::before {
   }
   .p-chips:not(.p-disabled).p-focus .p-chips-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -900,7 +927,7 @@ body::before {
   }
   .p-dropdown:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1157,7 +1184,7 @@ body::before {
   }
   .p-inputtext:enabled:focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1308,7 +1335,7 @@ body::before {
   }
   .p-listbox.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1328,7 +1355,7 @@ body::before {
   }
   .p-multiselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1541,7 +1568,7 @@ body::before {
   }
   .p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:focus-visible) .p-radiobutton-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1582,7 +1609,7 @@ body::before {
   }
   .p-rating .p-rating-item.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1690,7 +1717,7 @@ body::before {
   }
   .p-treeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -1804,7 +1831,7 @@ body::before {
   }
   .p-togglebutton.p-button:not(.p-disabled):has(.p-togglebutton-input:focus-visible) {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: none;
     border-color: #3F51B5;
   }
@@ -7424,4 +7451,3 @@ body::before {
   }
 }
 /* Customizations to the designer theme should be defined here */
->>>>>>> master

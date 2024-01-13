@@ -1,25 +1,52 @@
-/* Error: Undefined variable.
- *    ,
- * 21 |     outline-offset: $inputFocusOutlineOffset;
- *    |                     ^^^^^^^^^^^^^^^^^^^^^^^^
- *    '
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_mixins.scss 21:21                         focused-input()
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/components/input/_autocomplete.scss 22:13  @import
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_components.scss 10:13                     @import
- *   ../../../Development/projects/sass-theme/primevue-sass-theme/themes/nova/nova-accent/theme.scss 3:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 21 \2502      outline-offset: $inputFocusOutlineOffset;\a    \2502                      ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_mixins.scss 21:21                         focused-input()\a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/components/input/_autocomplete.scss 22:13  @import\a   ../../../Development/projects/sass-theme/primevue-sass-theme/theme-base/_components.scss 10:13                     @import\a   ../../../Development/projects/sass-theme/primevue-sass-theme/themes/nova/nova-accent/theme.scss 3:9                root stylesheet";
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --surface-a: #ffffff;
+  --surface-b: #f4f4f4;
+  --surface-c: #eaeaea;
+  --surface-d: #c8c8c8;
+  --surface-e: #ffffff;
+  --surface-f: #ffffff;
+  --text-color: #333333;
+  --text-color-secondary: #848484;
+  --primary-color: #007ad9;
+  --primary-color-text: #ffffff;
+  --surface-0: #ffffff;
+  --surface-50: #eef1f2;
+  --surface-100: #dde2e4;
+  --surface-200: #bbc5ca;
+  --surface-300: #98a8af;
+  --surface-400: #768b95;
+  --surface-500: #546e7a;
+  --surface-600: #435862;
+  --surface-700: #324249;
+  --surface-800: #222c31;
+  --surface-900: #111618;
+  --gray-50: #eef1f2;
+  --gray-100: #dde2e4;
+  --gray-200: #bbc5ca;
+  --gray-300: #98a8af;
+  --gray-400: #768b95;
+  --gray-500: #546e7a;
+  --gray-600: #435862;
+  --gray-700: #324249;
+  --gray-800: #222c31;
+  --gray-900: #111618;
+  --content-padding:0.571rem 1rem;
+  --inline-spacing:0.5rem;
+  --border-radius:3px;
+  --surface-ground:#f4f4f4;
+  --surface-section:#ffffff;
+  --surface-card:#ffffff;
+  --surface-overlay:#ffffff;
+  --surface-border:#c8c8c8;
+  --surface-hover:#eaeaea;
+  --focus-ring: 0 0 0 0.2rem #8dcdff;
+  --maskbg: rgba(0, 0, 0, 0.4);
+  --highlight-bg: #e02365;
+  --highlight-text-color: #ffffff;
+  color-scheme: light;
 }
-<<<<<<< HEAD
-=======
 
 :root {
   --blue-50:#f3f8fc;
@@ -330,7 +357,7 @@ body::before {
   }
   .p-autocomplete:not(.p-disabled).p-focus .p-autocomplete-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -414,7 +441,7 @@ body::before {
   }
   .p-calendar:not(.p-calendar-disabled).p-focus > .p-inputtext {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -654,7 +681,7 @@ body::before {
   }
   .p-cascadeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -783,7 +810,7 @@ body::before {
   }
   .p-checkbox:not(.p-disabled):has(.p-checkbox-input:focus-visible) .p-checkbox-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -809,7 +836,7 @@ body::before {
   }
   .p-chips:not(.p-disabled).p-focus .p-chips-multiple-container {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -876,7 +903,7 @@ body::before {
   }
   .p-dropdown:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1133,7 +1160,7 @@ body::before {
   }
   .p-inputtext:enabled:focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1284,7 +1311,7 @@ body::before {
   }
   .p-listbox.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1304,7 +1331,7 @@ body::before {
   }
   .p-multiselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1517,7 +1544,7 @@ body::before {
   }
   .p-radiobutton:not(.p-disabled):has(.p-radiobutton-input:focus-visible) .p-radiobutton-box {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1558,7 +1585,7 @@ body::before {
   }
   .p-rating .p-rating-item.p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1666,7 +1693,7 @@ body::before {
   }
   .p-treeselect:not(.p-disabled).p-focus {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -1780,7 +1807,7 @@ body::before {
   }
   .p-togglebutton.p-button:not(.p-disabled):has(.p-togglebutton-input:focus-visible) {
     outline: 0 none;
-    outline-offset: -2px;
+    outline-offset: 0;
     box-shadow: 0 0 0 0.2rem #8dcdff;
     border-color: #007ad9;
   }
@@ -5849,4 +5876,3 @@ body::before {
 }
 
 /* Customizations to the designer theme should be defined here */
->>>>>>> master

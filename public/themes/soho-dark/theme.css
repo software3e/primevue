@@ -437,6 +437,12 @@
     transition: box-shadow 0.2s;
     border-radius: 0;
   }
+  .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item:first-child {
+    margin-top: 0;
+  }
+  .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item:last-child {
+    margin-bottom: 0;
+  }
   .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item.p-highlight {
     color: #b19df7;
     background: rgba(177, 157, 247, 0.16);
@@ -750,6 +756,12 @@
     transition: box-shadow 0.2s;
     border-radius: 0;
   }
+  .p-cascadeselect-panel .p-cascadeselect-items .p-cascadeselect-item:first-child {
+    margin-top: 0;
+  }
+  .p-cascadeselect-panel .p-cascadeselect-items .p-cascadeselect-item:last-child {
+    margin-bottom: 0;
+  }
   .p-cascadeselect-panel .p-cascadeselect-items .p-cascadeselect-item.p-highlight {
     color: #b19df7;
     background: rgba(177, 157, 247, 0.16);
@@ -996,6 +1008,12 @@
     transition: box-shadow 0.2s;
     border-radius: 0;
   }
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item:first-child {
+    margin-top: 0;
+  }
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item:last-child {
+    margin-bottom: 0;
+  }
   .p-dropdown-panel .p-dropdown-items .p-dropdown-item.p-highlight {
     color: #b19df7;
     background: rgba(177, 157, 247, 0.16);
@@ -1139,7 +1157,7 @@
     background: rgba(255, 255, 255, 0.6);
     width: 1.25rem;
     height: 1.25rem;
-    transform: translateX(0.25rem);
+    left: 0.25rem;
     margin-top: -0.625rem;
     border-radius: 50%;
     transition-duration: 0.2s;
@@ -1306,6 +1324,12 @@
     transition: box-shadow 0.2s;
     border-radius: 0;
   }
+  .p-listbox .p-listbox-list .p-listbox-item:first-child {
+    margin-top: 0;
+  }
+  .p-listbox .p-listbox-list .p-listbox-item:last-child {
+    margin-bottom: 0;
+  }
   .p-listbox .p-listbox-list .p-listbox-item.p-highlight {
     color: #b19df7;
     background: rgba(177, 157, 247, 0.16);
@@ -1449,6 +1473,12 @@
     background: transparent;
     transition: box-shadow 0.2s;
     border-radius: 0;
+  }
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item:first-child {
+    margin-top: 0;
+  }
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item:last-child {
+    margin-bottom: 0;
   }
   .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
     color: #b19df7;
@@ -1594,6 +1624,7 @@
   }
   .p-rating .p-rating-item {
     outline-color: transparent;
+    border-radius: 50%;
   }
   .p-rating .p-rating-item .p-rating-icon {
     color: rgba(255, 255, 255, 0.87);
@@ -1611,7 +1642,6 @@
     outline: 0 none;
     outline-offset: 0;
     box-shadow: 0 0 0 1px #e0d8fc;
-    border-color: #b19df7;
   }
   .p-rating .p-rating-item.p-rating-item-active .p-rating-icon {
     color: #b19df7;
@@ -1776,14 +1806,7 @@
     background-color: #3e4053;
   }
 
-  .p-togglebutton.p-button {
-    background: #282936;
-    border: 1px solid #3e4053;
-    color: rgba(255, 255, 255, 0.87);
-    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-    outline-color: transparent;
-  }
-  .p-togglebutton.p-button .p-togglebutton-input {
+  .p-togglebutton .p-togglebutton-input {
     appearance: none;
     position: absolute;
     top: 0;
@@ -1798,44 +1821,51 @@
     border: 1px solid #3e4053;
     border-radius: 6px;
   }
-  .p-togglebutton.p-button .p-button-icon-left,
-.p-togglebutton.p-button .p-button-icon-right {
+  .p-togglebutton .p-button {
+    background: #282936;
+    border: 1px solid #3e4053;
+    color: rgba(255, 255, 255, 0.87);
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    outline-color: transparent;
+  }
+  .p-togglebutton .p-button .p-button-icon-left,
+.p-togglebutton .p-button .p-button-icon-right {
     color: rgba(255, 255, 255, 0.6);
   }
-  .p-togglebutton.p-button.p-highlight {
+  .p-togglebutton.p-highlight .p-button {
     background: #b19df7;
     border-color: #b19df7;
     color: #1c1d26;
   }
-  .p-togglebutton.p-button.p-highlight .p-button-icon-left,
-.p-togglebutton.p-button.p-highlight .p-button-icon-right {
+  .p-togglebutton.p-highlight .p-button .p-button-icon-left,
+.p-togglebutton.p-highlight .p-button .p-button-icon-right {
     color: #1c1d26;
   }
-  .p-togglebutton.p-button:not(.p-disabled):hover:not(.p-highlight) {
+  .p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover):not(.p-highlight) .p-button {
     background: rgba(255, 255, 255, 0.03);
     border-color: #3e4053;
     color: rgba(255, 255, 255, 0.87);
   }
-  .p-togglebutton.p-button:not(.p-disabled):hover:not(.p-highlight) .p-button-icon-left,
-.p-togglebutton.p-button:not(.p-disabled):hover:not(.p-highlight) .p-button-icon-right {
+  .p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover):not(.p-highlight) .p-button .p-button-icon-left,
+.p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover):not(.p-highlight) .p-button .p-button-icon-right {
     color: rgba(255, 255, 255, 0.6);
   }
-  .p-togglebutton.p-button:not(.p-disabled):hover.p-highlight {
+  .p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover).p-highlight .p-button {
     background: #a28af5;
     border-color: #a28af5;
     color: #1c1d26;
   }
-  .p-togglebutton.p-button:not(.p-disabled):hover.p-highlight .p-button-icon-left,
-.p-togglebutton.p-button:not(.p-disabled):hover.p-highlight .p-button-icon-right {
+  .p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover).p-highlight .p-button .p-button-icon-left,
+.p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover).p-highlight .p-button .p-button-icon-right {
     color: #1c1d26;
   }
-  .p-togglebutton.p-button:not(.p-disabled):has(.p-togglebutton-input:focus-visible) {
+  .p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:focus-visible) .p-button {
     outline: 0 none;
     outline-offset: 0;
     box-shadow: 0 0 0 1px #e0d8fc;
     border-color: #b19df7;
   }
-  .p-togglebutton.p-button.p-invalid > .p-button {
+  .p-togglebutton.p-invalid > .p-button {
     border-color: #ff9a9a;
   }
 
@@ -2338,6 +2368,7 @@
     background: rgba(255, 255, 255, 0.87);
     color: #1d1e27;
     outline-color: transparent;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
   }
   .p-speeddial-action:hover {
     background: rgba(255, 255, 255, 0.6);
@@ -3065,6 +3096,12 @@
     transition: box-shadow 0.2s;
     border-radius: 0;
   }
+  .p-column-filter-overlay .p-column-filter-row-items .p-column-filter-row-item:first-child {
+    margin-top: 0;
+  }
+  .p-column-filter-overlay .p-column-filter-row-items .p-column-filter-row-item:last-child {
+    margin-bottom: 0;
+  }
   .p-column-filter-overlay .p-column-filter-row-items .p-column-filter-row-item.p-highlight {
     color: #b19df7;
     background: rgba(177, 157, 247, 0.16);
@@ -3144,6 +3181,12 @@
     color: rgba(255, 255, 255, 0.87);
     background: transparent;
     transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .p-orderlist .p-orderlist-list .p-orderlist-item:first-child {
+    margin-top: 0;
+  }
+  .p-orderlist .p-orderlist-list .p-orderlist-item:last-child {
+    margin-bottom: 0;
   }
   .p-orderlist .p-orderlist-list .p-orderlist-item:not(.p-highlight):hover {
     background: rgba(255, 255, 255, 0.03);
@@ -3322,6 +3365,12 @@
     background: transparent;
     transition: transform 0.2s, box-shadow 0.2s;
   }
+  .p-picklist .p-picklist-list .p-picklist-item:first-child {
+    margin-top: 0;
+  }
+  .p-picklist .p-picklist-list .p-picklist-item:last-child {
+    margin-bottom: 0;
+  }
   .p-picklist .p-picklist-list .p-picklist-item:not(.p-highlight):hover {
     background: rgba(255, 255, 255, 0.03);
     color: rgba(255, 255, 255, 0.87);
@@ -3418,7 +3467,7 @@
   .p-tree .p-tree-container .p-treenode .p-treenode-content .p-checkbox {
     margin-right: 0.5rem;
   }
-  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-checkbox .p-indeterminate .p-checkbox-icon {
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-checkbox.p-indeterminate .p-checkbox-icon {
     color: rgba(255, 255, 255, 0.87);
   }
   .p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
@@ -3567,7 +3616,7 @@
   .p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler + .p-checkbox {
     margin-right: 0.5rem;
   }
-  .p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler + .p-checkbox .p-indeterminate .p-checkbox-icon {
+  .p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler + .p-checkbox.p-indeterminate .p-checkbox-icon {
     color: rgba(255, 255, 255, 0.87);
   }
   .p-treetable .p-treetable-tbody > tr:focus-visible {
@@ -4305,6 +4354,12 @@
   .p-contextmenu .p-menuitem {
     margin: 0;
   }
+  .p-contextmenu .p-menuitem:first-child {
+    margin-top: 0;
+  }
+  .p-contextmenu .p-menuitem:last-child {
+    margin-bottom: 0;
+  }
   .p-contextmenu .p-menuitem > .p-menuitem-content {
     color: rgba(255, 255, 255, 0.87);
     transition: box-shadow 0.2s;
@@ -4449,6 +4504,12 @@
   }
   .p-megamenu .p-menuitem {
     margin: 0;
+  }
+  .p-megamenu .p-menuitem:first-child {
+    margin-top: 0;
+  }
+  .p-megamenu .p-menuitem:last-child {
+    margin-bottom: 0;
   }
   .p-megamenu .p-menuitem > .p-menuitem-content {
     color: rgba(255, 255, 255, 0.87);
@@ -4623,6 +4684,12 @@
   .p-menu .p-menuitem {
     margin: 0;
   }
+  .p-menu .p-menuitem:first-child {
+    margin-top: 0;
+  }
+  .p-menu .p-menuitem:last-child {
+    margin-bottom: 0;
+  }
   .p-menu .p-menuitem > .p-menuitem-content {
     color: rgba(255, 255, 255, 0.87);
     transition: box-shadow 0.2s;
@@ -4737,6 +4804,12 @@
   }
   .p-menubar .p-menuitem {
     margin: 0;
+  }
+  .p-menubar .p-menuitem:first-child {
+    margin-top: 0;
+  }
+  .p-menubar .p-menuitem:last-child {
+    margin-bottom: 0;
   }
   .p-menubar .p-menuitem > .p-menuitem-content {
     color: rgba(255, 255, 255, 0.87);
@@ -4927,6 +5000,12 @@
   .p-panelmenu .p-panelmenu-content .p-menuitem {
     margin: 0;
   }
+  .p-panelmenu .p-panelmenu-content .p-menuitem:first-child {
+    margin-top: 0;
+  }
+  .p-panelmenu .p-panelmenu-content .p-menuitem:last-child {
+    margin-bottom: 0;
+  }
   .p-panelmenu .p-panelmenu-content .p-menuitem > .p-menuitem-content {
     color: rgba(255, 255, 255, 0.87);
     transition: box-shadow 0.2s;
@@ -5105,6 +5184,12 @@
   }
   .p-tieredmenu .p-menuitem {
     margin: 0;
+  }
+  .p-tieredmenu .p-menuitem:first-child {
+    margin-top: 0;
+  }
+  .p-tieredmenu .p-menuitem:last-child {
+    margin-bottom: 0;
   }
   .p-tieredmenu .p-menuitem > .p-menuitem-content {
     color: rgba(255, 255, 255, 0.87);
@@ -5617,6 +5702,10 @@
     min-width: 3rem;
     height: 3rem;
     line-height: 3rem;
+  }
+
+  .p-blockui {
+    border-radius: 6px;
   }
 
   .p-chip {
